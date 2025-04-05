@@ -1,6 +1,9 @@
 #Prompt user to display the change owed
-change = float(input("Enter change owed (in $, not cents!!): "))
+price = float(input("Enter price of item: "))
 
+cash = float(input("Enter how much cash you are giving: "))
+
+change = cash - price
 #Convert the change into an integer (i.e $0.25 becomes 25 cents)
 change = change * 100
 
